@@ -1,0 +1,53 @@
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "position": map-merge(
+//       map-get($utilities, "position"),
+//       (
+//         responsive: true
+//       ),
+//     ),
+//     "translate-middle": map-merge(
+//       map-get($utilities,"translate-middle"),
+//       (
+//         responsive: true,
+//       )
+//     ),
+//     "width": map-merge(
+//       map-get($utilities,"width"),
+//       (
+//         responsive: true,
+//       )
+//     ),
+//     "font-size": map-merge(
+//       map-get($utilities,"font-size"),
+//       (
+//         responsive: true,
+//       )
+//     ),
+//     "font-weight": map-merge(
+//       map-get($utilities, "font-weight"),
+//       (
+//         responsive: true,
+//         values: map-merge(
+//           map-get(map-get($utilities, "font-weight"), "values"),
+//           (
+//             medium: $font-weight-medium,
+//           ),
+//         ),
+//       ),
+//     ),
+//   )
+// );
+
+
+// .bg-cover-center{
+//   background-size: cover;
+//   background-position: center center;
+// }
+
+// .scrollbar-none{
+//   &::-webkit-scrollbar{
+//     display: none;
+//   }
+// }
