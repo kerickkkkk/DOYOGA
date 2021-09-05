@@ -13,12 +13,18 @@ $utilities: map-merge(
         responsive: true,
       )
     ),
-    // "width": map-merge(
-    //   map-get($utilities,"width"),
-    //   (
-    //     responsive: true,
-    //   )
-    // ),
+    "width": map-merge(
+      map-get($utilities,"width"),
+      (
+        responsive: true,
+      )
+    ),
+    "overflow": map-merge(
+      map-get($utilities,"overflow"),
+      (
+        responsive: true,
+      )
+    ),
     "font-size": map-merge(
       map-get($utilities,"font-size"),
       (
@@ -45,9 +51,18 @@ $utilities: map-merge(
   background-size: cover;
   background-position: center center;
 }
+.bg-cover-bottom{
+  background-size: cover;
+  background-position: center bottom;
+}
 
 .scrollbar-none{
   &::-webkit-scrollbar{
     display: none;
+  }
+}
+.ms-md-n-11{
+  @include media-breakpoint-up(md) { 
+    margin-left: map-get($spacers, 11) * -1;
   }
 }

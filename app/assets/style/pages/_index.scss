@@ -1,0 +1,20 @@
+.hero{
+  height: 582px;
+}
+.liveList{
+  &__item{
+    height: 420px;
+    @include media-breakpoint-up(md) { 
+      height: 252px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 420px;
+    }
+  }
+}
+.professional{
+  .ratio{
+    max-height: 628px;
+  }
+}
+
