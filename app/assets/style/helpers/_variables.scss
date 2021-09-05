@@ -565,6 +565,7 @@ $aspect-ratios: (
   "4x3": calc(3 / 4 * 100%),
   "6x7": calc(7 / 6 * 100%),
   "9x7": calc(7 / 9 * 100%),
+  "10x7": calc(7 / 10 * 100%),
   "16x9": calc(9 / 16 * 100%),
   "21x9": calc(9 / 21 * 100%),
   "200x113" : calc( 113 / 200 * 100%)
@@ -1260,8 +1261,8 @@ $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
-$card-border-color:                 rgba($black, .125) !default;
-$card-border-radius:                $border-radius !default;
+$card-border-color:                 $secondary;//rgba($black, .125) !default;
+$card-border-radius:                1rem;//$border-radius !default;
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
