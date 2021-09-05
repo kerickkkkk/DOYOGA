@@ -1,0 +1,23 @@
+.surrounding{
+  &__item{
+    height: 350px;
+  }
+}
+.courseRecommendation{
+  padding: {
+    top: 40px;
+    bottom: 48px;
+  };
+  @include media-breakpoint-up(md) { 
+    padding: {
+      top: 32px;
+      bottom: 40px;
+    };
+  }
+  @include media-breakpoint-up(lg) {
+    padding: {
+      top: 40px;
+      bottom: 56px;
+    }; 
+  }
+}
