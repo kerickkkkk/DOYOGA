@@ -862,7 +862,7 @@ $input-bg:                              $body-bg !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
-$input-color:                           $body-color !default;
+$input-color:                           $dark;//$body-color !default;
 $input-border-color:                    $secondary;//$gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
@@ -900,7 +900,7 @@ $form-check-input-width:                  1em !default;
 $form-check-min-height:                   $font-size-base * $line-height-base !default;
 $form-check-padding-start:                $form-check-input-width + .5em !default;
 $form-check-margin-bottom:                .125rem !default;
-$form-check-label-color:                  null !default;
+$form-check-label-color:                  $primary;//null !default;
 $form-check-label-cursor:                 null !default;
 $form-check-transition:                   null !default;
 
@@ -964,7 +964,7 @@ $form-select-font-size:             $input-font-size !default;
 $form-select-indicator-padding:     $form-select-padding-x * 3 !default; // Extra padding for background-image
 $form-select-font-weight:           $input-font-weight !default;
 $form-select-line-height:           $input-line-height !default;
-$form-select-color:                 $input-color !default;
+$form-select-color:                 $secondary;//$input-color !default;
 $form-select-bg:                    $input-bg !default;
 $form-select-disabled-color:        null !default;
 $form-select-disabled-bg:           $gray-200 !default;
