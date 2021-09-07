@@ -12,6 +12,7 @@
 
 // component
 @import "./component/button";
+@import "./component/card";
 
 
 
@@ -19,5 +20,5 @@
 
 //pages
 @import './pages/index';
-@import './pages/contact';
+@import './pages/reservation';
 @import './pages/surrounding';

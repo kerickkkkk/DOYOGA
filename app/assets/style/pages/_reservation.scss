@@ -1,0 +1,32 @@
+.step{
+  text-align: center;
+  &__item{
+    color: $primary;
+    background-color: $light;
+    border-radius: 1rem;
+    padding: {
+      top: .75rem;
+      bottom: .75rem;
+    };
+    &.active{
+      color:$white;
+      background-color: $primary;
+    }
+  }
+}
+.reservationNote{
+  @include media-breakpoint-up(md){
+    max-width: 445px;
+  }
+}
+.reservation{
+  &__crouseList{
+    &.hideActiveMDBelow{
+      @include media-breakpoint-down(lg) {
+        .card:not(.active){
+          display: none;
+        }
+      }
+    }
+  }
+}
