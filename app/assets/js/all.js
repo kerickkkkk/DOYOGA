@@ -1,10 +1,12 @@
 $(function() {
   const checkReservateDay = document.querySelector('.checkReservateDay');
-  const datepicker = new Datepicker(checkReservateDay, {
-    nextArrow: '>',
-    prevArrow: '<',
-    buttonClass: 'btn text-primary',
-  }); 
+  if(checkReservateDay){
+    const datepicker = new Datepicker(checkReservateDay, {
+      nextArrow: '>',
+      prevArrow: '<',
+      buttonClass: 'btn text-primary',
+    }); 
+  }
   
   $('.reservation__crouseList .card').on('click',function(){
     $('.reservation__crouseList').addClass('hideActiveMDBelow').find('.card').removeClass('border-4 active').siblings('.reservation__crouseList__arrow').addClass('d-none');
