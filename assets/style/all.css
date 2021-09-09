@@ -19,6 +19,98 @@
   }
 }
 
+.specialPadding-1 {
+  padding-top: 48px;
+  padding-bottom: 88px;
+}
+
+@media (min-width: 768px) {
+  .specialPadding-1 {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  .specialPadding-1 {
+    padding-bottom: 110px;
+  }
+}
+
+.maxHeight-1 {
+  max-height: 218px;
+}
+
+@media (min-width: 768px) {
+  .maxHeight-1 {
+    max-height: 341px;
+  }
+}
+
+.maxHeight-2 {
+  max-height: 165px;
+}
+
+@media (min-width: 768px) {
+  .maxHeight-2 {
+    max-height: 418px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mb-md-72px {
+    margin-bottom: 72px;
+  }
+}
+
+.mb-88 {
+  margin-bottom: 88px;
+}
+
+@media (min-width: 768px) {
+  .mb-md-80 {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mb-lg-113 {
+    margin-bottom: 113px;
+  }
+}
+
+.h-196 {
+  height: 196px;
+}
+
+.h-165 {
+  height: 165px;
+}
+
+@media (min-width: 768px) {
+  .h-md-418 {
+    height: 418px;
+  }
+}
+
+.w-96 {
+  width: 96px;
+}
+
+.w-165 {
+  width: 165px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-scale-1:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -2683,7 +2775,7 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #707070;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #C0A4A5;
@@ -2715,7 +2807,7 @@ progress {
 }
 
 .form-control:focus {
-  color: #212529;
+  color: #707070;
   background-color: #fff;
   border-color: #c8bdbd;
   outline: 0;
@@ -2762,7 +2854,7 @@ progress {
   margin: -0.375rem -0.75rem;
   -webkit-margin-end: 0.75rem;
           margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #707070;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -2794,7 +2886,7 @@ progress {
   margin: -0.375rem -0.75rem;
   -webkit-margin-end: 0.75rem;
           margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #707070;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -2918,7 +3010,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #C0A4A5;
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -2962,7 +3054,7 @@ textarea.form-control-lg {
 
 .form-select:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 #212529;
+  text-shadow: 0 0 0 #C0A4A5;
 }
 
 .form-select-sm {
@@ -3056,6 +3148,10 @@ textarea.form-control-lg {
 
 .form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
   opacity: 0.5;
+}
+
+.form-check-label {
+  color: #907A7B;
 }
 
 .form-switch {
@@ -3375,7 +3471,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #707070;
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
@@ -5709,7 +5805,7 @@ fieldset:disabled .btn {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 1rem 1rem;
+  padding: 24px 24px;
 }
 
 .card-title {
@@ -5726,11 +5822,11 @@ fieldset:disabled .btn {
 }
 
 .card-link + .card-link {
-  margin-left: 1rem;
+  margin-left: 24px;
 }
 
 .card-header {
-  padding: 0.5rem 1rem;
+  padding: 12px 24px;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid #C0A4A5;
@@ -5741,7 +5837,7 @@ fieldset:disabled .btn {
 }
 
 .card-footer {
-  padding: 0.5rem 1rem;
+  padding: 12px 24px;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid #C0A4A5;
 }
@@ -5751,15 +5847,15 @@ fieldset:disabled .btn {
 }
 
 .card-header-tabs {
-  margin-right: -0.5rem;
-  margin-bottom: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: -12px;
+  margin-bottom: -12px;
+  margin-left: -12px;
   border-bottom: 0;
 }
 
 .card-header-pills {
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: -12px;
+  margin-left: -12px;
 }
 
 .card-img-overlay {
@@ -8079,6 +8175,10 @@ fieldset:disabled .btn {
   --bs-aspect-ratio: calc(3 / 4 * 100%);
 }
 
+.ratio-5x3 {
+  --bs-aspect-ratio: calc(3 / 5 * 100%);
+}
+
 .ratio-6x7 {
   --bs-aspect-ratio: calc(7 / 6 * 100%);
 }
@@ -10183,6 +10283,12 @@ fieldset:disabled .btn {
 
 .invisible {
   visibility: hidden !important;
+}
+
+.transition-duration-1 {
+  -webkit-transition-duration: 0.2s !important;
+       -o-transition-duration: 0.2s !important;
+          transition-duration: 0.2s !important;
 }
 
 @media (min-width: 576px) {
@@ -15600,6 +15706,10 @@ p, ul, ol, li {
   margin: 0;
 }
 
+p {
+  color: #907A7B;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -15614,6 +15724,30 @@ ul, ol {
 
 a {
   text-decoration: none;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-subtitle {
+  color: #C0A4A5;
+  font-weight: normal;
+}
+
+.card__badge {
+  font-size: 14px;
+  font-weight: light;
+  background-color: #907A7B;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.datepicker-cell.focused {
+  background-color: #907A7B;
 }
 
 .hero {
@@ -15651,21 +15785,32 @@ a {
   content: "";
 }
 
-.contact {
-  padding-top: 48px;
-  padding-bottom: 88px;
+.step {
+  text-align: center;
+}
+
+.step__item {
+  color: #907A7B;
+  background-color: #F5F0E7;
+  border-radius: 1rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.step__item.active {
+  color: #fff;
+  background-color: #907A7B;
 }
 
 @media (min-width: 768px) {
-  .contact {
-    padding-top: 64px;
-    padding-bottom: 80px;
+  .reservationNote {
+    max-width: 445px;
   }
 }
 
-@media (min-width: 992px) {
-  .contact {
-    padding-bottom: 110px;
+@media (max-width: 991.98px) {
+  .reservation__crouseList.hideActiveMDBelow .card:not(.active) {
+    display: none;
   }
 }
 
