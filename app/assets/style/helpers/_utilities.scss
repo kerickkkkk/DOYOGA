@@ -43,6 +43,13 @@ $utilities: map-merge(
         ),
       ),
     ),
+    "transition-duration": (
+      property: transition-duration,
+      class: transition-duration,
+      values: (
+        1: .2s,
+      ),
+    ),
   )
 );
 
@@ -83,5 +90,89 @@ $utilities: map-merge(
     padding: {
       bottom: 110px;
     };
+  }
+}
+
+// max height 系列
+.maxHeight{
+  &-1{
+    max-height: 218px;
+    @include media-breakpoint-up(md) { 
+      max-height: 341px;
+    }
+  }
+  &-2{
+    max-height: 165px;
+    @include media-breakpoint-up(md) { 
+      max-height: 418px;
+    }
+  }
+}
+
+// magic spacing
+
+
+@include media-breakpoint-up(md) { 
+  .mb-md-72px{
+    margin-bottom: 72px;
+  }
+}
+
+.mb-88{
+  margin-bottom: 88px;
+}
+
+@include media-breakpoint-up(md) {
+  .mb-md-80{
+    margin-bottom: 80px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .mb-lg-113{
+    margin-bottom: 113px;
+  }
+}
+
+
+.h-196{
+  height: 196px;
+}
+
+.h-165{
+  height: 165px;
+}
+
+@include media-breakpoint-up(md) {
+  .h-md-418{
+    height: 418px;
+  }
+}
+// placeholder 需確認沒反應
+//
+// @each $name, $value in $theme-colors {
+//   .placeholder-#{$name}{
+//     &::placeholder{
+//       color: $value;
+//     }
+//   }
+// }
+
+
+.w-96{
+  width: 96px;
+}
+.w-165{
+  width: 165px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.hover{
+  &-scale-1{
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 }

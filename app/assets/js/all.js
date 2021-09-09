@@ -86,5 +86,21 @@ $(function() {
     }
   });
 
+  const teacherIntroductionSwiper = new Swiper(".teacherIntroductionSwiper", {
+    slidesPerView: 1,
+    slidesPerColumn: 4,
+    spaceBetween: 24,
+    breakpoints:{
+      768: {
+        slidesPerView: 2.1,
+        slidesPerColumn: 1,
+      },
+      992: {
+        slidesPerView: 3.1,
+        slidesPerColumn: 1,
+      }
+    }
+  });
+
 
 });

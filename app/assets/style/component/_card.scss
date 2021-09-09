@@ -3,4 +3,19 @@
     text-align: center;
     font-size: 20px;
   }
+  &-subtitle{
+    color: $secondary;
+    font-weight: normal;
+  }
+  &__badge{
+    font-size: 14px;
+    font-weight: light;
+    background-color: $primary;
+    padding: {
+      top: .25rem;
+      bottom: .25rem;
+      right: 1rem;
+      left: 1rem;
+    };
+  }
 }
